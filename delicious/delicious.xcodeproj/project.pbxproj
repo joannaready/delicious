@@ -16,6 +16,11 @@
 		25A1C03C1AC70F6A00C58677 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25A1C03B1AC70F6A00C58677 /* MapKit.framework */; };
 		25A1C0471AC7120F00C58677 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 25A1C0451AC7120F00C58677 /* AppDelegate.m */; };
 		25A1C0481AC7120F00C58677 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 25A1C0461AC7120F00C58677 /* main.m */; };
+		25A1C04C1AC71F0A00C58677 /* menuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25A1C04B1AC71F0A00C58677 /* menuViewController.m */; };
+		25A1C04F1AC71F2C00C58677 /* mineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25A1C04E1AC71F2C00C58677 /* mineViewController.m */; };
+		25A1C0521AC71FFD00C58677 /* orderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25A1C0511AC71FFD00C58677 /* orderViewController.m */; };
+		25A1C0551AC720B800C58677 /* saleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25A1C0541AC720B800C58677 /* saleViewController.m */; };
+		25A1C0581AC7212B00C58677 /* settingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25A1C0571AC7212B00C58677 /* settingViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,16 @@
 		25A1C0441AC7120F00C58677 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		25A1C0451AC7120F00C58677 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		25A1C0461AC7120F00C58677 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		25A1C04A1AC71F0A00C58677 /* menuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = menuViewController.h; sourceTree = "<group>"; };
+		25A1C04B1AC71F0A00C58677 /* menuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = menuViewController.m; sourceTree = "<group>"; };
+		25A1C04D1AC71F2C00C58677 /* mineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mineViewController.h; sourceTree = "<group>"; };
+		25A1C04E1AC71F2C00C58677 /* mineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mineViewController.m; sourceTree = "<group>"; };
+		25A1C0501AC71FFD00C58677 /* orderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = orderViewController.h; sourceTree = "<group>"; };
+		25A1C0511AC71FFD00C58677 /* orderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = orderViewController.m; sourceTree = "<group>"; };
+		25A1C0531AC720B800C58677 /* saleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = saleViewController.h; sourceTree = "<group>"; };
+		25A1C0541AC720B800C58677 /* saleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = saleViewController.m; sourceTree = "<group>"; };
+		25A1C0561AC7212B00C58677 /* settingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = settingViewController.h; sourceTree = "<group>"; };
+		25A1C0571AC7212B00C58677 /* settingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = settingViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +156,8 @@
 		25A1C03E1AC7120600C58677 /* menu菜品 */ = {
 			isa = PBXGroup;
 			children = (
+				25A1C04A1AC71F0A00C58677 /* menuViewController.h */,
+				25A1C04B1AC71F0A00C58677 /* menuViewController.m */,
 			);
 			path = "menu菜品";
 			sourceTree = "<group>";
@@ -148,6 +165,8 @@
 		25A1C03F1AC7120600C58677 /* mine自存菜品 */ = {
 			isa = PBXGroup;
 			children = (
+				25A1C04D1AC71F2C00C58677 /* mineViewController.h */,
+				25A1C04E1AC71F2C00C58677 /* mineViewController.m */,
 			);
 			path = "mine自存菜品";
 			sourceTree = "<group>";
@@ -155,6 +174,8 @@
 		25A1C0401AC7120600C58677 /* order定单 */ = {
 			isa = PBXGroup;
 			children = (
+				25A1C0501AC71FFD00C58677 /* orderViewController.h */,
+				25A1C0511AC71FFD00C58677 /* orderViewController.m */,
 			);
 			path = "order定单";
 			sourceTree = "<group>";
@@ -162,6 +183,8 @@
 		25A1C0411AC7120600C58677 /* sales商家 */ = {
 			isa = PBXGroup;
 			children = (
+				25A1C0531AC720B800C58677 /* saleViewController.h */,
+				25A1C0541AC720B800C58677 /* saleViewController.m */,
 			);
 			path = "sales商家";
 			sourceTree = "<group>";
@@ -169,6 +192,8 @@
 		25A1C0421AC7120600C58677 /* setting */ = {
 			isa = PBXGroup;
 			children = (
+				25A1C0561AC7212B00C58677 /* settingViewController.h */,
+				25A1C0571AC7212B00C58677 /* settingViewController.m */,
 			);
 			path = setting;
 			sourceTree = "<group>";
@@ -293,7 +318,12 @@
 				25A1C01B1AC70F4500C58677 /* delicious.xcdatamodeld in Sources */,
 				25A1C01E1AC70F4500C58677 /* ViewController.m in Sources */,
 				25A1C0481AC7120F00C58677 /* main.m in Sources */,
+				25A1C0551AC720B800C58677 /* saleViewController.m in Sources */,
+				25A1C0521AC71FFD00C58677 /* orderViewController.m in Sources */,
 				25A1C0471AC7120F00C58677 /* AppDelegate.m in Sources */,
+				25A1C04C1AC71F0A00C58677 /* menuViewController.m in Sources */,
+				25A1C0581AC7212B00C58677 /* settingViewController.m in Sources */,
+				25A1C04F1AC71F2C00C58677 /* mineViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
