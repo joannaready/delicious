@@ -21,6 +21,7 @@
 		25A1C0521AC71FFD00C58677 /* orderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25A1C0511AC71FFD00C58677 /* orderViewController.m */; };
 		25A1C0551AC720B800C58677 /* saleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25A1C0541AC720B800C58677 /* saleViewController.m */; };
 		25A1C0581AC7212B00C58677 /* settingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25A1C0571AC7212B00C58677 /* settingViewController.m */; };
+		25A1C05A1AC7E6E400C58677 /* menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25A1C0591AC7E6E400C58677 /* menu.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		25A1C0541AC720B800C58677 /* saleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = saleViewController.m; sourceTree = "<group>"; };
 		25A1C0561AC7212B00C58677 /* settingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = settingViewController.h; sourceTree = "<group>"; };
 		25A1C0571AC7212B00C58677 /* settingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = settingViewController.m; sourceTree = "<group>"; };
+		25A1C0591AC7E6E400C58677 /* menu.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = menu.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +160,7 @@
 			children = (
 				25A1C04A1AC71F0A00C58677 /* menuViewController.h */,
 				25A1C04B1AC71F0A00C58677 /* menuViewController.m */,
+				25A1C0591AC7E6E400C58677 /* menu.storyboard */,
 			);
 			path = "menu菜品";
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 				25A1C0211AC70F4600C58677 /* Main.storyboard in Resources */,
 				25A1C0261AC70F4600C58677 /* LaunchScreen.xib in Resources */,
 				25A1C0231AC70F4600C58677 /* Images.xcassets in Resources */,
+				25A1C05A1AC7E6E400C58677 /* menu.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

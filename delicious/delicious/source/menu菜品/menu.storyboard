@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7519.1" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="I49-m5-lGn">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7513.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Menu-->
+        <scene sceneID="bgv-BL-UPS">
+            <objects>
+                <navigationController id="I49-m5-lGn" customClass="menu" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1Bc-FI-Btm">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="21u-8a-OuG" kind="relationship" relationship="rootViewController" id="pKh-hM-cyq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zNg-nj-oQq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="371" y="-202.99999999999997"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="fog-JL-mYG">
+            <objects>
+                <tabBarController id="21u-8a-OuG" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="IW7-jV-RT8"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="siQ-LG-I6D">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="jjY-54-zvl" kind="relationship" relationship="viewControllers" id="Rqn-PI-aH4"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nkd-R8-uOr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1038" y="-202.99999999999997"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="4CE-GO-sqg">
+            <objects>
+                <viewController storyboardIdentifier="菜单" id="jjY-54-zvl" customClass="menuViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jgw-QD-BMb"/>
+                        <viewControllerLayoutGuide type="bottom" id="Y47-kf-2yA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6ux-R6-LT3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TqC-Op-atZ" userLabel="菜系展示">
+                                <rect key="frame" x="0.0" y="64" width="600" height="60"/>
+                                <color key="backgroundColor" red="0.13333334029999999" green="0.94117653369999998" blue="0.56862747670000002" alpha="1" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="dvZ-n4-ZYM"/>
+                                </constraints>
+                            </scrollView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uAu-mR-hxe" userLabel="菜品展示">
+                                <rect key="frame" x="0.0" y="126" width="600" height="474"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="TqC-Op-atZ" secondAttribute="trailing" constant="-16" id="7LO-Ro-PGg"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="uAu-mR-hxe" secondAttribute="bottom" id="A1A-Om-uOP"/>
+                            <constraint firstItem="uAu-mR-hxe" firstAttribute="top" secondItem="TqC-Op-atZ" secondAttribute="bottom" constant="2" id="Cn0-jA-Imn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="uAu-mR-hxe" secondAttribute="trailing" constant="-16" id="TJc-gp-bv4"/>
+                            <constraint firstItem="TqC-Op-atZ" firstAttribute="top" secondItem="jgw-QD-BMb" secondAttribute="bottom" id="af7-1D-fBM"/>
+                            <constraint firstItem="uAu-mR-hxe" firstAttribute="leading" secondItem="6ux-R6-LT3" secondAttribute="leadingMargin" constant="-16" id="cco-5W-yIy"/>
+                            <constraint firstItem="TqC-Op-atZ" firstAttribute="leading" secondItem="6ux-R6-LT3" secondAttribute="leadingMargin" constant="-16" id="dx5-CS-HjK"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="fFW-a9-dGA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uw0-fx-eOy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1713" y="-394"/>
+        </scene>
+    </scenes>
+</document>
